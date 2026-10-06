@@ -9,8 +9,6 @@ router = routers.DefaultRouter()
 
 router.register("dealerships", DealershipViewSet)
 
-# TODO: Add the car view set to the urls
-
 urlpatterns = [
     path(r'', include(router.urls)),
 ]

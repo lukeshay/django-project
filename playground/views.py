@@ -23,6 +23,3 @@ class DealershipSerializer(ModelSerializer):
 class DealershipViewSet(ModelViewSet):
     queryset = Dealership.objects.all()
     serializer_class = DealershipSerializer
-
-
-# TODO: Create the car view set

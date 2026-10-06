@@ -25,5 +25,3 @@ class Dealership(models.Model):
     zipcode = models.CharField(
         max_length=5,
     )
-
-# TODO: Create the car model
