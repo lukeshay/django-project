@@ -7,7 +7,7 @@ fake = Faker()
 
 
 def create_dealership():
-    Dealership.objects.create(
+    return Dealership.objects.create(
         name=fake.company(),
         timezone=fake.timezone(),
         address1=fake.street_address(),
