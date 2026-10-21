@@ -20,12 +20,12 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
         "batisteo.vscode-django",
         "ms-vsliveshare.vsliveshare"
       ],
       "settings": {
         "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
+        "python-envs.defaultEnvManager": "ms-python.python:venv",
         "python.testing.pytestEnabled": true,
         "python.testing.pytestArgs": [
           "."

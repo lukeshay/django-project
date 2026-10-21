@@ -16,4 +16,5 @@ def create_dealership():
         zipcode=fake.zipcode(),
     )
 
+
 # Create your tests here.

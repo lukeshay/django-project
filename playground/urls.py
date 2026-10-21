@@ -4,11 +4,12 @@ from rest_framework import routers
 
 from playground.views import DealershipViewSet
 
-# add urls here
 router = routers.DefaultRouter()
 
 router.register("dealerships", DealershipViewSet)
 
+# add urls here
+
 urlpatterns = [
-    path(r'', include(router.urls)),
+    path(r"", include(router.urls)),
 ]

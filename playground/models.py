@@ -1,17 +1,10 @@
 from django.db import models
 
 
-# Create your models here.
 class Dealership(models.Model):
-    name = models.CharField(
-        max_length=64
-    )
-    timezone = models.CharField(
-        max_length=64
-    )
-    address1 = models.CharField(
-        max_length=512
-    )
+    name = models.CharField(max_length=64)
+    timezone = models.CharField(max_length=64)
+    address1 = models.CharField(max_length=512)
     address2 = models.CharField(
         max_length=512,
         null=True,
@@ -25,3 +18,6 @@ class Dealership(models.Model):
     zipcode = models.CharField(
         max_length=5,
     )
+
+
+# Create your models here.

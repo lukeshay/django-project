@@ -15,11 +15,13 @@ class DealershipSerializer(ModelSerializer):
         try:
             ZoneInfo(value)
             return value
-        except:
-            raise ValidationError("Must be a valid timezone")
+        except Exception as e:
+            raise ValidationError("Must be a valid timezone") from e
 
 
-# Create your views here.
 class DealershipViewSet(ModelViewSet):
     queryset = Dealership.objects.all()
     serializer_class = DealershipSerializer
+
+
+# Create your serializers views here.

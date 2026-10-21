@@ -1,3 +1,3 @@
 # Django Technical Interview
 
-- I want to be able to view and manage service appointments at dealerships
+- I want to be able to view and manage service appointments at car dealerships
