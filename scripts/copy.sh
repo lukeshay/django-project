@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NEW_PROJECT="django-project-${$1}"
+NEW_PROJECT="django-project-${1}"
 
 cp -r django-project "${NEW_PROJECT}"
 
